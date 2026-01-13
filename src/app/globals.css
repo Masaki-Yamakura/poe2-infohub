@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Forced Dark Mode Variables (PoE2 Theme) */
+    --background: #000000;
+    /* Deep warm dark */
+    --foreground: 0 0% 100%;
+    /* White */
+
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 45 93% 47%;
+    /* Brighter Gold */
+    --primary-foreground: 0 0% 100%;
+    /* Changed from dark to white, assuming gold button text should be white or user wants ALL text white even if contrast is poor? 
+       Actually, on gold background (#e6b800), white text is hard to read. But user asked for "ALL text white". 
+       I will keep primary-foreground a bit dark if it's on gold, OR if the user means "text on black background", which is most places.
+       Wait, primary buttons have `bg-primary text-primary-foreground`. 
+       If I make primary-foreground white, it will be white on gold. 
+       Let's stick to making global text on black background white.
+       The user said "background color and same color characters", implying text on dark background.
+       So secondary-foreground, muted-foreground, card-foreground, popover-foreground MUST be white.
+       Primary-foreground is on Primary color.
+       Let's assume user means content text.
+    */
+    --primary-foreground: 26 83.3% 14.1%;
+    /* Keep dark for contrast on gold button */
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 90%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 45 93% 47%;
+
+    --radius: 0.5rem;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
