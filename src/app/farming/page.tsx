@@ -61,6 +61,29 @@ export default function FarmingPage() {
                         </Link>
                     </CardContent>
                 </Card>
+
+                {/* Strategy: Kulemak Invitation */}
+                <Card className="border-red-500/20 bg-red-500/5 col-span-full md:col-span-2 lg:col-span-1">
+                    <CardHeader>
+                        <div className="flex items-center gap-2 mb-2">
+                            <Sword className="h-5 w-5 text-red-500" />
+                            <Badge className="bg-red-600 hover:bg-red-700 text-white">中級・ボス周回</Badge>
+                        </div>
+                        <CardTitle className="text-white">クーラマクの招待</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-sm text-zinc-300 leading-relaxed mb-3">
+                            招待状を買ってボスを倒すだけの単純明快な金策。
+                            1時間あたり15-25周でTimeless Jewelなどのレア泥を狙う。
+                        </p>
+                        <Link
+                            href="/farming/kulemak"
+                            className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
+                        >
+                            詳細を見る <Sparkles className="ml-1 h-3 w-3" />
+                        </Link>
+                    </CardContent>
+                </Card>
             </div>
         </div>
     )

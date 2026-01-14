@@ -83,6 +83,20 @@ export function Sidebar() {
                                         </div>
                                         ブリーチ指輪 (Breach Ring)
                                     </Link>
+                                    <Link
+                                        href="/farming/kulemak"
+                                        className={cn(
+                                            "flex items-center gap-2 px-2 py-1.5 text-xs rounded-md transition-colors",
+                                            pathname === "/farming/kulemak"
+                                                ? "text-amber-500 bg-amber-900/20 font-medium"
+                                                : "text-zinc-300 hover:text-white hover:bg-zinc-800/50"
+                                        )}
+                                    >
+                                        <div className="w-3 h-3 rounded-full border border-red-500/50 bg-red-500/20 flex items-center justify-center">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-red-500"></div>
+                                        </div>
+                                        クーラマクの招待 (Kulemak)
+                                    </Link>
                                 </div>
                             )}
 
