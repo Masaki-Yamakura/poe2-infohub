@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname, useSearchParams } from "next/navigation"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { BookOpen, Sword, Tag, Sparkles, Bookmark } from "lucide-react"
+import { BookOpen, Sword, Tag, Sparkles, Bookmark, Hammer } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { getAllTags } from "@/lib/data"
 
@@ -47,8 +47,34 @@ export function Sidebar() {
                             </Link>
 
                             <Link
+                                href="/endgame"
+                                className={getLinkClass("/endgame")}
+                            >
+                                <Sparkles className="h-4 w-4" />
+                                エンドゲーム (Endgame)
+                            </Link>
+
+                            <Link
+                                href="/build"
+                                className={getLinkClass("/build")}
+                            >
+                                <Hammer className="h-4 w-4" />
+                                ビルド (Build)
+                            </Link>
+
+                            <Link
+                                href="/atziri"
+                                className={getLinkClass("/atziri")}
+                            >
+                                <div className="w-4 h-4 rounded-sm bg-red-500/20 border border-red-500 flex items-center justify-center">
+                                    <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                                </div>
+                                アッツィリの神殿 (Atziri)
+                            </Link>
+
+                            <Link
                                 href="/farming"
-                                className={cn(getLinkClass("/farming"), "ml-4")}
+                                className={getLinkClass("/farming")}
                             >
                                 <Sword className="h-4 w-4" />
                                 金策・ファーミング (Money Making)
@@ -57,6 +83,20 @@ export function Sidebar() {
                             {/* Farming Sub-navigation */}
                             {pathname.startsWith("/farming") && (
                                 <div className="ml-12 flex flex-col gap-1 mb-2 border-l border-zinc-800 pl-2">
+                                    <Link
+                                        href="/farming/tablet-crafting"
+                                        className={cn(
+                                            "flex items-center gap-2 px-2 py-1.5 text-xs rounded-md transition-colors",
+                                            pathname === "/farming/tablet-crafting"
+                                                ? "text-amber-500 bg-amber-900/20 font-medium"
+                                                : "text-zinc-300 hover:text-white hover:bg-zinc-800/50"
+                                        )}
+                                    >
+                                        <div className="w-3 h-3 rounded-full border border-cyan-500/50 bg-cyan-500/20 flex items-center justify-center">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-cyan-500"></div>
+                                        </div>
+                                        石板クラフト (Tablet)
+                                    </Link>
                                     <Link
                                         href="/farming/essence"
                                         className={cn(
@@ -97,12 +137,26 @@ export function Sidebar() {
                                         </div>
                                         クーラマクの招待 (Kulemak)
                                     </Link>
+                                    <Link
+                                        href="/farming/sekhema"
+                                        className={cn(
+                                            "flex items-center gap-2 px-2 py-1.5 text-xs rounded-md transition-colors",
+                                            pathname === "/farming/sekhema"
+                                                ? "text-amber-500 bg-amber-900/20 font-medium"
+                                                : "text-zinc-300 hover:text-white hover:bg-zinc-800/50"
+                                        )}
+                                    >
+                                        <div className="w-3 h-3 rounded-full border border-yellow-500/50 bg-yellow-500/20 flex items-center justify-center">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
+                                        </div>
+                                        セケマの試練 (Sekhema)
+                                    </Link>
                                 </div>
                             )}
 
                             <Link
                                 href="/glossary"
-                                className={cn(getLinkClass("/glossary"), "ml-4")}
+                                className={getLinkClass("/glossary")}
                             >
                                 <BookOpen className="h-4 w-4" />
                                 用語集 (Glossary)
@@ -131,7 +185,7 @@ export function Sidebar() {
 
                             <Link
                                 href="/references"
-                                className={cn(getLinkClass("/references"), "ml-4")}
+                                className={getLinkClass("/references")}
                             >
                                 <Bookmark className="h-4 w-4" />
                                 参考サイト (References)

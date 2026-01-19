@@ -3,7 +3,7 @@ export interface Term {
     name: string
     englishName: string
     definition: string
-    category: "Mechanic" | "Item" | "Passive" | "Skill" | "Boss" | "Other"
+    category: "Mechanic" | "Item" | "Passive" | "Skill" | "Boss" | "Other" | "Currency" | "Stat"
     tags: string[]
     createdAt: string
 }

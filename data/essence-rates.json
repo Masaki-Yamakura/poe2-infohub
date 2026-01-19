@@ -1,0 +1,197 @@
+{
+  "精神_greater": {
+    "stackSize": "5",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:40"
+  },
+  "強化_greater": {
+    "stackSize": "4",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:41"
+  },
+  "無限_greater": {
+    "stackSize": "4",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:41"
+  },
+  "火炎_greater": {
+    "stackSize": "3",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:42"
+  },
+  "断熱_greater": {
+    "stackSize": "1",
+    "price": "2.50",
+    "lastUpdated": "2026/01/17 08:51"
+  },
+  "解凍_greater": {
+    "stackSize": "1",
+    "price": "2.50",
+    "lastUpdated": "2026/01/17 08:52"
+  },
+  "接地_greater": {
+    "stackSize": "1",
+    "price": "2.50",
+    "lastUpdated": "2026/01/17 08:52"
+  },
+  "擦傷_greater": {
+    "stackSize": "1",
+    "price": "2",
+    "lastUpdated": "2026/01/17 08:52"
+  },
+  "戦闘_greater": {
+    "stackSize": "2",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:53"
+  },
+  "魔法_greater": {
+    "stackSize": "2",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:53"
+  },
+  "破滅_greater": {
+    "stackSize": "1",
+    "price": "2",
+    "lastUpdated": "2026/01/17 08:54"
+  },
+  "命令_greater": {
+    "stackSize": "10",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:54"
+  },
+  "迅速_greater": {
+    "stackSize": "1",
+    "price": "1",
+    "lastUpdated": "2026/01/17 08:54"
+  },
+  "敏速_greater": {
+    "stackSize": "1",
+    "price": "1.45",
+    "lastUpdated": "2026/01/17 08:55"
+  },
+  "探求_greater": {
+    "stackSize": "1",
+    "price": "14",
+    "lastUpdated": "2026/01/17 09:14"
+  },
+  "絢爛_greater": {
+    "stackSize": "1",
+    "price": "192",
+    "lastUpdated": "2026/01/17 08:57"
+  },
+  "肉体_perfect": {
+    "stackSize": "1",
+    "price": "3.50",
+    "lastUpdated": "2026/01/17 08:57"
+  },
+  "精神_perfect": {
+    "stackSize": "1",
+    "price": "18",
+    "lastUpdated": "2026/01/17 08:57"
+  },
+  "強化_perfect": {
+    "stackSize": "1",
+    "price": "14.50",
+    "lastUpdated": "2026/01/17 08:58"
+  },
+  "擦傷_perfect": {
+    "stackSize": "1",
+    "price": "6",
+    "lastUpdated": "2026/01/17 08:58"
+  },
+  "氷_perfect": {
+    "stackSize": "1",
+    "price": "4",
+    "lastUpdated": "2026/01/17 08:59"
+  },
+  "解凍_perfect": {
+    "stackSize": "1",
+    "price": "3.50",
+    "lastUpdated": "2026/01/17 08:59"
+  },
+  "電気_perfect": {
+    "stackSize": "1",
+    "price": "4",
+    "lastUpdated": "2026/01/17 09:00"
+  },
+  "接地_perfect": {
+    "stackSize": "1",
+    "price": "5",
+    "lastUpdated": "2026/01/17 09:00"
+  },
+  "破滅_perfect": {
+    "stackSize": "1",
+    "price": "3",
+    "lastUpdated": "2026/01/17 09:00"
+  },
+  "命令_perfect": {
+    "stackSize": "1",
+    "price": "3",
+    "lastUpdated": "2026/01/17 09:00"
+  },
+  "戦闘_perfect": {
+    "stackSize": "1",
+    "price": "212",
+    "lastUpdated": "2026/01/17 09:01"
+  },
+  "迅速_perfect": {
+    "stackSize": "1",
+    "price": "122",
+    "lastUpdated": "2026/01/17 09:01"
+  },
+  "敏速_perfect": {
+    "stackSize": "1",
+    "price": "103",
+    "lastUpdated": "2026/01/17 09:01"
+  },
+  "無限_perfect": {
+    "stackSize": "1",
+    "price": "4",
+    "lastUpdated": "2026/01/17 22:35"
+  },
+  "探求_perfect": {
+    "stackSize": "1",
+    "price": "3",
+    "lastUpdated": "2026/01/17 09:02"
+  },
+  "ヒステリーのエッセンス": {
+    "stackSize": "1",
+    "price": "832",
+    "lastUpdated": "2026/01/17 09:02"
+  },
+  "深淵のエッセンス": {
+    "stackSize": "1",
+    "price": "90",
+    "lastUpdated": "2026/01/17 09:02"
+  },
+  "錯乱のエッセンス": {
+    "stackSize": "1",
+    "price": "71",
+    "lastUpdated": "2026/01/17 09:03"
+  },
+  "戦慄のエッセンス": {
+    "stackSize": "1",
+    "price": "5105",
+    "lastUpdated": "2026/01/17 09:03"
+  },
+  "狂気のエッセンス": {
+    "stackSize": "1",
+    "price": "17",
+    "lastUpdated": "2026/01/17 09:03"
+  },
+  "絢爛_perfect": {
+    "stackSize": "1",
+    "price": "17",
+    "lastUpdated": "2026/01/17 09:03"
+  },
+  "断熱_perfect": {
+    "stackSize": "1",
+    "price": "3.5",
+    "lastUpdated": "2026/01/17 09:04"
+  },
+  "魔法_perfect": {
+    "stackSize": "1",
+    "price": "40",
+    "lastUpdated": "2026/01/17 09:04"
+  }
+}

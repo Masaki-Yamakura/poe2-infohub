@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Coins, Flame, Map, Sword, Sparkles, Hammer } from "lucide-react"
+import { Coins, Flame, Map, Sword, Sparkles, Hammer, Activity } from "lucide-react"
 
 export default function FarmingPage() {
     return (
@@ -16,6 +16,29 @@ export default function FarmingPage() {
             </p>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {/* Strategy: Tablet Crafting (New) */}
+                <Card className="border-cyan-500/20 bg-cyan-500/5 col-span-full md:col-span-2 lg:col-span-1">
+                    <CardHeader>
+                        <div className="flex items-center gap-2 mb-2">
+                            <Hammer className="h-5 w-5 text-cyan-500" />
+                            <Badge className="bg-cyan-600 hover:bg-cyan-700 text-white">クラフト・高利益</Badge>
+                        </div>
+                        <CardTitle className="text-white">石板クラフト金策</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-sm text-zinc-300 leading-relaxed mb-3">
+                            Waystoneにセットする石板（Tablet）をクラフトして資産を増やす方法。
+                            動画解説付きで手順を紹介。
+                        </p>
+                        <Link
+                            href="/farming/tablet-crafting"
+                            className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
+                        >
+                            詳細を見る <Sparkles className="ml-1 h-3 w-3" />
+                        </Link>
+                    </CardContent>
+                </Card>
+
                 {/* Strategy: Essence (From Video) */}
                 <Card className="border-purple-500/20 bg-purple-500/5 col-span-full md:col-span-2 lg:col-span-1">
                     <CardHeader>
@@ -78,6 +101,29 @@ export default function FarmingPage() {
                         </p>
                         <Link
                             href="/farming/kulemak"
+                            className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
+                        >
+                            詳細を見る <Sparkles className="ml-1 h-3 w-3" />
+                        </Link>
+                    </CardContent>
+                </Card>
+
+                {/* Strategy: Sekhema Farm */}
+                <Card className="border-yellow-500/20 bg-yellow-500/5 col-span-full md:col-span-2 lg:col-span-1">
+                    <CardHeader>
+                        <div className="flex items-center gap-2 mb-2">
+                            <Activity className="h-5 w-5 text-yellow-500" />
+                            <Badge className="bg-yellow-600 hover:bg-yellow-700 text-white">中級・時給30Div</Badge>
+                        </div>
+                        <CardTitle className="text-white">セケマの試練</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-sm text-zinc-300 leading-relaxed mb-3">
+                            特定のレリックを揃えて試練を周回する安定金策。
+                            不幸（Affliction）の管理さえできれば非常に高効率。
+                        </p>
+                        <Link
+                            href="/farming/sekhema"
                             className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
                         >
                             詳細を見る <Sparkles className="ml-1 h-3 w-3" />

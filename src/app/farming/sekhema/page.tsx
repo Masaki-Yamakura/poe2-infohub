@@ -1,9 +1,9 @@
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Skull, Coins, Timer, AlertTriangle, BookOpen, ExternalLink, TrendingUp, Search, BarChart3, Clock, ShieldCheck, Flame, Swords, Zap, Info, Sparkles } from "lucide-react"
+import { ArrowLeft, Activity, Shield, Coins, AlertTriangle, BookOpen, ExternalLink, TrendingUp, Search, BarChart3, Clock, ShieldCheck, Flame, Skull, Zap, Sparkles } from "lucide-react"
 
-export default function KulemakFarmingPage() {
+export default function SekhemaFarmingPage() {
     return (
         <div className="container mx-auto px-4 py-8 max-w-6xl">
             {/* Header / Navigation */}
@@ -19,13 +19,13 @@ export default function KulemakFarmingPage() {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div>
                         <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-2 flex items-center gap-3">
-                            <span className="p-2 bg-amber-500/10 rounded-lg border border-amber-500/20">
-                                <Skull className="h-8 w-8 text-amber-500" />
+                            <span className="p-2 bg-red-500/10 rounded-lg border border-red-500/20">
+                                <Activity className="h-8 w-8 text-red-500" />
                             </span>
-                            クーラマクの招待
+                            セケマの試練
                         </h1>
                         <p className="text-zinc-400 text-lg max-w-2xl">
-                            中〜上級者向けボス周回。交換所で招待状を購入し、Timeless Jewelや高額ユニークの一発ドロップを狙いつつ、回転率で稼ぐスタイル。
+                            PoE2最高峰の金策の一つ。適切なレリック構成を整えることで、安定して時給30 Divine前後の収益が見込めるレリック周回戦略。
                         </p>
                     </div>
                 </div>
@@ -45,16 +45,16 @@ export default function KulemakFarmingPage() {
                         </CardHeader>
                         <CardContent className="space-y-4 text-zinc-200 leading-relaxed">
                             <p>
-                                「クレマックの招待状（Kulemak's Invitation）」を購入し、ひたすらボスを倒し続けるシンプルな金策です。
+                                「セケマの試練（Trial of Sekhema）」を周回し、高額なレリックやユニーク指輪を狙います。
                             </p>
                             <p>
-                                準備が簡単でメカニクスも単純ですが、ある程度のビルドパワー（ボス火力）が求められます。失敗しても招待状は無くならないため、ゾンビアタック気味での攻略も可能です。
+                                初期投資として約30 Divine（レリック代）が必要ですが、安定性は非常に高く、8日間で3700 Divine以上稼いだ報告もある強力なファームです。
                             </p>
 
                             <div className="flex flex-wrap gap-2 pt-2">
-                                <Badge variant="secondary" className="bg-red-500/10 text-red-400 hover:bg-red-500/20 border-red-500/20">ボス・ラスト（ボスの錆）</Badge>
-                                <Badge variant="secondary" className="bg-amber-500/10 text-amber-400 hover:bg-amber-500/20 border-amber-500/20">振れ幅が大きい / ハイバリアンス</Badge>
-                                <Badge variant="secondary" className="bg-zinc-500/10 text-zinc-400 hover:bg-zinc-500/20 border-zinc-500/20">簡単なセットアップ</Badge>
+                                <Badge variant="secondary" className="bg-amber-500/10 text-amber-400 hover:bg-amber-500/20 border-amber-500/20">High Profit</Badge>
+                                <Badge variant="secondary" className="bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 border-blue-500/20">Relic Farming</Badge>
+                                <Badge variant="secondary" className="bg-zinc-500/10 text-zinc-400 hover:bg-zinc-500/20 border-zinc-500/20">Mid-High ティア</Badge>
                             </div>
                         </CardContent>
                     </Card>
@@ -62,25 +62,25 @@ export default function KulemakFarmingPage() {
                     {/* Requirements / Prep (Mini Cards) */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="bg-zinc-900/30 p-4 rounded-xl border border-zinc-800 flex flex-col items-center text-center hover:bg-zinc-900/50 transition-colors">
-                            <div className="p-3 bg-amber-500/10 rounded-full mb-3 text-amber-500">
-                                <Search className="h-6 w-6" />
+                            <div className="p-3 bg-blue-500/10 rounded-full mb-3 text-blue-500">
+                                <Shield className="h-6 w-6" />
                             </div>
-                            <h3 className="font-semibold text-white mb-1">招待状</h3>
-                            <p className="text-xs text-zinc-400">取引所 (エクスチェンジ)で購入</p>
+                            <h3 className="font-semibold text-white mb-1">Magic Relics</h3>
+                            <p className="text-xs text-zinc-400">Honor系 x3 (必須)</p>
+                        </div>
+                        <div className="bg-zinc-900/30 p-4 rounded-xl border border-zinc-800 flex flex-col items-center text-center hover:bg-zinc-900/50 transition-colors">
+                            <div className="p-3 bg-amber-500/10 rounded-full mb-3 text-amber-500">
+                                <Coins className="h-6 w-6" />
+                            </div>
+                            <h3 className="font-semibold text-white mb-1">初期投資</h3>
+                            <p className="text-xs text-zinc-400">~30 Divine</p>
                         </div>
                         <div className="bg-zinc-900/30 p-4 rounded-xl border border-zinc-800 flex flex-col items-center text-center hover:bg-zinc-900/50 transition-colors">
                             <div className="p-3 bg-red-500/10 rounded-full mb-3 text-red-500">
-                                <Swords className="h-6 w-6" />
+                                <AlertTriangle className="h-6 w-6" />
                             </div>
-                            <h3 className="font-semibold text-white mb-1">火力</h3>
-                            <p className="text-xs text-zinc-400">ボス瞬殺推奨</p>
-                        </div>
-                        <div className="bg-zinc-900/30 p-4 rounded-xl border border-zinc-800 flex flex-col items-center text-center hover:bg-zinc-900/50 transition-colors">
-                            <div className="p-3 bg-blue-500/10 rounded-full mb-3 text-blue-500">
-                                <Coins className="h-6 w-6" />
-                            </div>
-                            <h3 className="font-semibold text-white mb-1">資金</h3>
-                            <p className="text-xs text-zinc-400">中 (買い付け)</p>
+                            <h3 className="font-semibold text-white mb-1">NG Affliction</h3>
+                            <p className="text-xs text-zinc-400">知識が必須</p>
                         </div>
                     </div>
                 </div>
@@ -97,10 +97,10 @@ export default function KulemakFarmingPage() {
                         </CardHeader>
                         <CardContent className="space-y-6">
                             <div>
-                                <div className="text-4xl font-bold text-amber-400 tracking-tight">15-25 Div/h</div>
+                                <div className="text-4xl font-bold text-amber-400 tracking-tight">~30 Div/h</div>
                                 <div className="text-sm text-zinc-500 mt-1 flex items-center gap-1">
-                                    <Flame className="h-3 w-3 text-red-500" />
-                                    上振れあり (運要素)
+                                    <Clock className="h-3 w-3" />
+                                    継続的な収益
                                 </div>
                             </div>
 
@@ -110,21 +110,21 @@ export default function KulemakFarmingPage() {
                                         <BarChart3 className="h-4 w-4" />
                                         <span>難易度</span>
                                     </div>
-                                    <span className="font-medium text-white">★★★☆☆ (Boss)</span>
+                                    <span className="font-medium text-white">★★★☆☆ (知識)</span>
                                 </div>
                                 <div className="flex items-center justify-between text-sm">
                                     <div className="flex items-center gap-2 text-zinc-400">
                                         <Coins className="h-4 w-4" />
                                         <span>初期投資</span>
                                     </div>
-                                    <span className="font-medium text-white">中 (Medium)</span>
+                                    <span className="font-medium text-white">高 (High)</span>
                                 </div>
                                 <div className="flex items-center justify-between text-sm">
                                     <div className="flex items-center gap-2 text-zinc-400">
                                         <ShieldCheck className="h-4 w-4" />
                                         <span>安定性</span>
                                     </div>
-                                    <span className="font-medium text-zinc-300">中 (Medium)</span>
+                                    <span className="font-medium text-green-400">非常に高い</span>
                                 </div>
                             </div>
                         </CardContent>
@@ -136,7 +136,7 @@ export default function KulemakFarmingPage() {
                             ポイント
                         </h4>
                         <p className="text-xs text-zinc-400 leading-relaxed">
-                            1周1-2分の「高速周回」が前提の時給設計です。ボスを瞬殺できる火力が必要です。手持ちの不要な石板を売って資金にするのも手です。
+                            レリック資産を購入して運用する投資型の金策です。参入障壁（初期費用）が高い分、ライバルが少なく安定して稼げます。
                         </p>
                     </div>
                 </div>
@@ -155,64 +155,74 @@ export default function KulemakFarmingPage() {
                     <div className="space-y-4">
                         {/* Step 1 */}
                         <div className="relative p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:bg-zinc-900/60 transition-all group flex flex-col md:flex-row gap-6 items-start">
-                            <div className="hidden md:flex w-12 h-12 rounded-xl bg-amber-500/10 items-center justify-center text-amber-500 flex-shrink-0 mt-1 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+                            <div className="hidden md:flex w-12 h-12 rounded-xl bg-blue-500/10 items-center justify-center text-blue-500 flex-shrink-0 mt-1 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
                                 <h3 className="font-bold text-xl">1</h3>
                             </div>
                             <div className="flex-1">
                                 <div className="flex items-center gap-3 mb-2">
-                                    <div className="md:hidden p-2 bg-amber-500/10 rounded-lg text-amber-500">
+                                    <div className="md:hidden p-2 bg-blue-500/10 rounded-lg text-blue-500">
                                         <h3 className="font-bold">1</h3>
                                     </div>
                                     <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                                        招待状を購入
+                                        必須レリックの準備
                                     </h3>
                                 </div>
-                                <p className="text-zinc-400 leading-relaxed mb-3">
-                                    取引所 (エクスチェンジ)で「クレマックの招待状（Kulemak's Invitation）」を購入します。まとめて買うのが効率的。目安: 27個/1Div 程度。
-                                </p>
+                                <div className="space-y-3 mt-3">
+                                    <p className="text-zinc-400 leading-relaxed">
+                                        アンフォラ（Amphora）スロットに、以下の魔法レリック（Magic Relic）を3本（縦3マス）セットします。
+                                    </p>
+                                    <div className="bg-blue-950/20 p-4 rounded-lg border border-blue-900/50">
+                                        <ul className="list-disc list-inside space-y-2 text-sm text-zinc-300">
+                                            <li><span className="text-white font-bold">名誉耐性 (Honor Resistance)</span> <span className="text-zinc-500 text-xs ml-2">例: +40%</span></li>
+                                            <li><span className="text-white font-bold">名誉の最大値増加 (Increased Maximum Honor)</span> <span className="text-zinc-500 text-xs ml-2">例: +36%</span></li>
+                                        </ul>
+                                    </div>
+                                    <p className="text-xs text-zinc-500">想定コスト: ~10 Divine / 本 (相場によります)</p>
+                                </div>
                             </div>
                         </div>
 
                         {/* Step 2 */}
                         <div className="relative p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:bg-zinc-900/60 transition-all group flex flex-col md:flex-row gap-6 items-start">
-                            <div className="hidden md:flex w-12 h-12 rounded-xl bg-amber-500/10 items-center justify-center text-amber-500 flex-shrink-0 mt-1 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+                            <div className="hidden md:flex w-12 h-12 rounded-xl bg-red-500/10 items-center justify-center text-red-500 flex-shrink-0 mt-1 shadow-[0_0_15px_rgba(239,68,68,0.1)]">
                                 <h3 className="font-bold text-xl">2</h3>
                             </div>
                             <div className="flex-1">
                                 <div className="flex items-center gap-3 mb-2">
-                                    <div className="md:hidden p-2 bg-amber-500/10 rounded-lg text-amber-500">
+                                    <div className="md:hidden p-2 bg-red-500/10 rounded-lg text-red-500">
                                         <h3 className="font-bold">2</h3>
                                     </div>
                                     <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                                        イベント進行
+                                        NG不遇 (Affliction) の回避
                                     </h3>
                                 </div>
                                 <p className="text-zinc-400 leading-relaxed mb-3">
-                                    エリアに入り指示に従って進みます。最後は「指輪を返す」選択肢を選び、ボス戦へ。
+                                    以下のAfflictionは攻略難易度を跳ね上げるため、<strong>絶対に出現させない、または選択しない</strong>ように注意します。
                                 </p>
-                                <div className="p-3 bg-zinc-950 rounded border border-zinc-800 text-sm text-zinc-400">
-                                    <Info className="h-3 w-3 inline mr-1 text-blue-400" />
-                                    指輪のMod選択はランダムでOK。時間効率優先で進めます。
+                                <div className="p-3 bg-red-950/30 rounded border border-red-900/50 text-red-200 text-sm font-semibold">
+                                    <Skull className="h-4 w-4 inline mr-2" />
+                                    獲得した時に追加でランダムな不幸を獲得する
+                                    <div className="text-xs font-normal text-red-400 mt-1 opacity-80">(Gain an additional random affliction when gaining an affliction)</div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Step 3 */}
                         <div className="relative p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:bg-zinc-900/60 transition-all group flex flex-col md:flex-row gap-6 items-start">
-                            <div className="hidden md:flex w-12 h-12 rounded-xl bg-amber-500/10 items-center justify-center text-amber-500 flex-shrink-0 mt-1 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+                            <div className="hidden md:flex w-12 h-12 rounded-xl bg-blue-500/10 items-center justify-center text-blue-500 flex-shrink-0 mt-1 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
                                 <h3 className="font-bold text-xl">3</h3>
                             </div>
                             <div className="flex-1">
                                 <div className="flex items-center gap-3 mb-2">
-                                    <div className="md:hidden p-2 bg-amber-500/10 rounded-lg text-amber-500">
+                                    <div className="md:hidden p-2 bg-blue-500/10 rounded-lg text-blue-500">
                                         <h3 className="font-bold">3</h3>
                                     </div>
                                     <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                                        ボス討伐 & ドロップ回収
+                                        周回と報酬獲得
                                     </h3>
                                 </div>
                                 <p className="text-zinc-400 leading-relaxed mb-3">
-                                    ボスを倒し、ドロップを確認。タイムレスジュエルや可能性のシャードなどを拾って即離脱。これを高速で繰り返します。
+                                    NG不幸を避けつつ、報酬の良い部屋を選択して進みます。最後にボスを倒して、レリックやユニークアイテムを持ち帰ります。
                                 </p>
                             </div>
                         </div>
@@ -227,7 +237,7 @@ export default function KulemakFarmingPage() {
                     </h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         <a
-                            href="https://www.youtube.com/watch?v=8D9u6pyq7EM"
+                            href="https://www.youtube.com/watch?v=MpKlZaWOFVI"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-4 p-4 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-red-500/50 hover:bg-zinc-900/80 transition-all group"
@@ -237,22 +247,7 @@ export default function KulemakFarmingPage() {
                             </div>
                             <div>
                                 <h3 className="font-bold text-white group-hover:text-red-400 transition-colors">YouTube 解説動画</h3>
-                                <p className="text-sm text-zinc-500">周回手法の具体的な流れを確認</p>
-                            </div>
-                        </a>
-
-                        <a
-                            href="https://www.reddit.com/r/pathofexile2builds/comments/1nps3gl/start_farming_kulemak_invitations_if_youre/?tl=ja"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-4 p-4 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-orange-500/50 hover:bg-zinc-900/80 transition-all group"
-                        >
-                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-orange-600/20 text-orange-500 group-hover:bg-orange-600 group-hover:text-white transition-colors">
-                                <BookOpen className="h-5 w-5" />
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-white group-hover:text-orange-400 transition-colors">Reddit スレッド</h3>
-                                <p className="text-sm text-zinc-500">効率やドロップ報告などの情報</p>
+                                <p className="text-sm text-zinc-500">【PoE2】白煙【HAKUEN】のセケマ攻略</p>
                             </div>
                         </a>
                     </div>
