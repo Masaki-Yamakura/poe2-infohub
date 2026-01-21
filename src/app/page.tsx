@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { BookOpen, Sword, Bookmark, ArrowRight, Sparkles, Hammer } from "lucide-react"
+import { BookOpen, Sword, Bookmark, ArrowRight, Sparkles, Hammer, Shield } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Home() {
@@ -100,6 +100,26 @@ export default function Home() {
           </Card>
         </Link>
 
+        {/* Sekhema Card */}
+        <Link href="/sekhema" className="group">
+          <Card className="h-full bg-zinc-900/50 border-zinc-800 transition-all duration-300 hover:border-amber-500/50 hover:bg-zinc-900 hover:shadow-lg hover:shadow-amber-900/10">
+            <CardHeader>
+              <div className="mb-2 w-fit rounded-lg bg-amber-500/10 p-3 text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-colors">
+                <Shield className="h-6 w-6" />
+              </div>
+              <CardTitle className="text-xl text-white group-hover:text-amber-400 transition-colors">セケマの試練 (Sekhema)</CardTitle>
+              <CardDescription className="text-zinc-400">
+                アセンダンシークラス解放のための完全攻略ガイド。
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex items-center text-sm text-zinc-500 group-hover:text-amber-400/80 transition-colors">
+                攻略法を見る <ArrowRight className="ml-2 h-4 w-4" />
+              </div>
+            </CardContent>
+          </Card>
+        </Link>
+
         {/* Glossary Card */}
         <Link href="/glossary" className="group">
           <Card className="h-full bg-zinc-900/50 border-zinc-800 transition-all duration-300 hover:border-yellow-500/50 hover:bg-zinc-900 hover:shadow-lg hover:shadow-yellow-900/10">
@@ -151,19 +171,19 @@ export default function Home() {
           <ul className="space-y-2 text-zinc-400">
             <li className="flex items-center gap-2">
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-500 border border-amber-500/20">NEW</span>
+              <span>「セケマの試練」完全攻略ガイドを追加しました。アセンダンシー解放の参考に！</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-xs font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-500 border border-amber-500/20">NEW</span>
               <span>「ビルド」ページを追加しました。おすすめビルド情報を近日公開予定！</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="text-xs font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-500 border border-blue-500/20">UPDATE</span>
               <span>「エンドゲーム」ページを公開しました。マップ＆ボス攻略の基礎を掲載。</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-xs font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-500 border border-zinc-700">INFO</span>
-              <span>用語集に新しい用語を追加しました。</span>
-            </li>
           </ul>
         </div>
       </section>
-    </div>
+    </div >
   );
 }

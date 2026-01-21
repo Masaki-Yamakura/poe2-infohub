@@ -73,6 +73,16 @@ export function Sidebar() {
                             </Link>
 
                             <Link
+                                href="/sekhema"
+                                className={getLinkClass("/sekhema")}
+                            >
+                                <div className="w-4 h-4 rounded-sm bg-yellow-500/20 border border-yellow-500 flex items-center justify-center">
+                                    <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                                </div>
+                                セケマの試練 (Sekhema)
+                            </Link>
+
+                            <Link
                                 href="/farming"
                                 className={getLinkClass("/farming")}
                             >
@@ -149,9 +159,10 @@ export function Sidebar() {
                                         <div className="w-3 h-3 rounded-full border border-yellow-500/50 bg-yellow-500/20 flex items-center justify-center">
                                             <div className="w-1.5 h-1.5 rounded-full bg-yellow-500"></div>
                                         </div>
-                                        セケマの試練 (Sekhema)
+                                        セケマファーミング (Sekhema)
                                     </Link>
                                 </div>
+
                             )}
 
                             <Link
