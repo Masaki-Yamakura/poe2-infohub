@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
-              href="/endgame"
+              href="/guide/endgame"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium transition-colors"
             >
               <Sparkles className="h-5 w-5" />
@@ -41,7 +41,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {/* Endgame Card */}
-        <Link href="/endgame" className="group">
+        <Link href="/guide/endgame" className="group">
           <Card className="h-full bg-zinc-900/50 border-zinc-800 transition-all duration-300 hover:border-amber-500/50 hover:bg-zinc-900 hover:shadow-lg hover:shadow-amber-900/10">
             <CardHeader>
               <div className="mb-2 w-fit rounded-lg bg-amber-500/10 p-3 text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-colors">
@@ -101,7 +101,7 @@ export default function Home() {
         </Link>
 
         {/* Sekhema Card */}
-        <Link href="/sekhema" className="group">
+        <Link href="/guide/sekhema" className="group">
           <Card className="h-full bg-zinc-900/50 border-zinc-800 transition-all duration-300 hover:border-amber-500/50 hover:bg-zinc-900 hover:shadow-lg hover:shadow-amber-900/10">
             <CardHeader>
               <div className="mb-2 w-fit rounded-lg bg-amber-500/10 p-3 text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-colors">

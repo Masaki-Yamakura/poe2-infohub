@@ -6,8 +6,6 @@ First, run the development server:
 
 ```
 bash
-cd .\AIWeb\poe2-infohub\
-
 npm run dev
 # or
 yarn dev

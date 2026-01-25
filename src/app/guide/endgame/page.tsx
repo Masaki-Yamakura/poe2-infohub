@@ -109,7 +109,7 @@ export default function EndgamePage() {
                             <li><span className="text-purple-400">難易度調整</span>：敵を強化する代わりに報酬を増やすハイリスク・ハイリターンな石板も。</li>
                         </ul>
                         <div className="mt-4">
-                            <Link href="/farming/tablet-crafting" className="text-sm text-purple-400 hover:text-purple-300 underline">
+                            <Link href="/farming/tablet-crafting-farming" className="text-sm text-purple-400 hover:text-purple-300 underline">
                                 詳しい石板クラフトの方法はこちら &rarr;
                             </Link>
                         </div>

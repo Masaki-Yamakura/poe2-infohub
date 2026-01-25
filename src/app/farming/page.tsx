@@ -31,7 +31,7 @@ export default function FarmingPage() {
                             動画解説付きで手順を紹介。
                         </p>
                         <Link
-                            href="/farming/tablet-crafting"
+                            href="/farming/tablet-crafting-farming"
                             className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
                         >
                             詳細を見る <Sparkles className="ml-1 h-3 w-3" />
@@ -54,7 +54,7 @@ export default function FarmingPage() {
                             詳細な手順や動画解説はこちら。
                         </p>
                         <Link
-                            href="/farming/essence"
+                            href="/farming/essence-farming"
                             className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
                         >
                             詳細を見る・解説動画へ <Sparkles className="ml-1 h-3 w-3" />
@@ -77,7 +77,7 @@ export default function FarmingPage() {
                             100 Divine Orb超えを狙えるハイリスク・ハイリターンな手法。
                         </p>
                         <Link
-                            href="/farming/breach-ring"
+                            href="/farming/breach-ring-farming"
                             className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
                         >
                             詳細手順を見る <Sparkles className="ml-1 h-3 w-3" />
@@ -100,7 +100,7 @@ export default function FarmingPage() {
                             1時間あたり15-25周でTimeless Jewelなどのレア泥を狙う。
                         </p>
                         <Link
-                            href="/farming/kulemak"
+                            href="/farming/kulemak-farming"
                             className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
                         >
                             詳細を見る <Sparkles className="ml-1 h-3 w-3" />
@@ -123,7 +123,7 @@ export default function FarmingPage() {
                             不幸（Affliction）の管理さえできれば非常に高効率。
                         </p>
                         <Link
-                            href="/farming/sekhema"
+                            href="/farming/sekhema-farming"
                             className="inline-flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors"
                         >
                             詳細を見る <Sparkles className="ml-1 h-3 w-3" />
